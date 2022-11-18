@@ -1,0 +1,13 @@
+<div class="">
+  <div>
+    <h1>Bedrijfsregister</h1>
+  </div>
+  <div>
+    <p>Voer de naam, plaats of het KvK nummer in.</p>
+  </div>
+  <div>
+    <label for="inputZoeken">Zoektekst</label>
+    <input type="text" class="form-control" id="inputZoeken" placeholder="Zoektekst">
+  </div>
+  <%= turbo_frame_tag 'search_results' %>
+</div>
