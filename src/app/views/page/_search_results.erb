@@ -1,0 +1,16 @@
+<%= turbo_frame_tag "search_frame" do %>
+  <% @companies.each do |c| %>
+    <hr />
+   <div>
+     <div>
+       <%= c.name %>
+     </div>
+     <div>
+       <%= c.city %>
+     </div>
+     <div>
+       <%= c.registry_number %>
+     </div>
+   </div>
+  <% end %>
+<% end %>
