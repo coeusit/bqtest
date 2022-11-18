@@ -5,7 +5,7 @@
   <div>
     <p>Voer de naam, plaats of het KvK nummer in.</p>
   </div>
-  <%= form_with(url: '/', method: "GET", data: { turbo_frame: "search_frame" }) do |form| %>
+  <%= form_with(url: '/', method: "GET", data: { controller: "searchform", turbo_frame: "search_frame", turbo_action: "advance" }) do |form| %>
     <div>
       <%= form.label :query, "Invoerveld:" %>
       <%= form.text_field :query, data: { action: "input->searchform#search" } %>
